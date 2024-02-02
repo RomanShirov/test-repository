@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"test-repository/logger"
+)
 
 func main() {
-	fmt.Println("Hello world")
+	l := logger.New()
+
+	l.Log.Info("Hello world")
 }
